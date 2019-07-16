@@ -1,19 +1,12 @@
 import React, { useState } from 'react';
+import './App.css';
 
-const Form = () => {
-  const [inputValue, setInputValue] = useState("");
-
-  const changeHandler = event => {
-    setInputValue(event.target.value);
-  };
-
+function Form(props) {
+  
   return (
     <div className="App">
       <form>
-        <label>
-          Best Member:
-          <input type="text" onChange={changeHandler} />
-        </label>
+    
       </form>
     </div>
   );
